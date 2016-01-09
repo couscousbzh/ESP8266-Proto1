@@ -28,11 +28,6 @@ D1_state=1;
 D0_state=1;
 end
 
-function dojob()
-	print('Server On')		
-	httpserver()	
-end
-
 --**** MODE AP
 wifi.setmode(wifi.SOFTAP) 
 local cfg={}
@@ -46,7 +41,8 @@ cfg.netmask="255.255.255.0"
 cfg.gateway="192.168.2.1"
 wifi.ap.setip(cfg)
 
-dojob()
+httpserver()	
+print('Server On')
 
 
 
