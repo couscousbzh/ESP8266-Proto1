@@ -4,7 +4,6 @@
 --For ESP12E Dev kit
 
 -- Config
-local modeStation = false;
 local SSID = "Livebox-AC8E"
 local WIFIKEY = "Enter your key here"
 local pinOnboardLed1 = 0;
